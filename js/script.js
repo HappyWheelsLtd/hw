@@ -102,3 +102,35 @@ document.getElementById("loader").style.display="none";
 },1000);
 
 });
+
+// =========================
+// Offer Popup
+// =========================
+
+const popup=document.getElementById("offerPopup");
+
+const closePopup=document.getElementById("closeOffer");
+
+const explore=document.getElementById("offerBtn");
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+popup.classList.add("show");
+
+},1800);
+
+});
+
+closePopup.onclick=()=>{
+
+popup.classList.remove("show");
+
+};
+
+explore.onclick=()=>{
+
+popup.classList.remove("show");
+
+};
