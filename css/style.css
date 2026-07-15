@@ -730,13 +730,6 @@ font-size:30px;
 text-align:center;
 }
 
-.nav-links{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:15px;
-}
-
 .nav-links a{
 font-size:15px;
 }
@@ -986,20 +979,23 @@ background:#ff9800;
 
 .menu-toggle{
 display:none;
-font-size:28px;
-color:white;
+font-size:30px;
+color:#fff;
 cursor:pointer;
+z-index:10001;
 }
 
-@media(max-width:768px){
+@media(max-width:768px)
+
+{
 
 .navbar{
 height:75px;
-padding:0 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-flex-direction:row;
+padding:0 20px;
+position:relative;
 }
 
 .logo{
@@ -1019,29 +1015,18 @@ display:block;
 }
 
 .nav-links{
-
 position:absolute;
-
 top:75px;
-
 left:-100%;
-
 width:100%;
-
 background:#08111f;
-
 display:flex;
-
 flex-direction:column;
-
 align-items:center;
-
 padding:25px 0;
-
-transition:.4s;
-
 gap:25px;
-
+transition:left .4s ease;
+z-index:9999;
 }
 
 .nav-links.active{
