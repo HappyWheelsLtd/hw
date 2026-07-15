@@ -830,3 +830,108 @@ background:#1ebe5d!important;
 .footer-content p{
 line-height:2;
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+/* Navbar */
+
+.navbar{
+    padding:15px 20px;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.logo{
+    font-size:34px;
+}
+
+.nav-links{
+    width:100%;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.nav-links a{
+    font-size:16px;
+}
+
+.btn{
+    padding:12px 24px;
+    font-size:16px;
+}
+
+/* Hero */
+
+.hero{
+    min-height:90vh;
+    padding:120px 20px 80px;
+}
+
+.hero-content h1{
+    font-size:56px;
+    line-height:1.15;
+}
+
+.hero-content p{
+    font-size:24px;
+    line-height:1.6;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    gap:18px;
+}
+
+.hero-buttons a{
+    width:100%;
+    max-width:320px;
+    margin:auto;
+}
+
+/* Services */
+
+.services-grid,
+.fleet-grid,
+.process-grid,
+.stats-grid{
+    grid-template-columns:1fr;
+}
+
+/* Contact */
+
+.contact-wrapper{
+    grid-template-columns:1fr;
+}
+
+/* Footer */
+
+.footer-content{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.social-links{
+    justify-content:center;
+}
+
+/* Floating Buttons */
+
+.call,
+.whatsapp{
+    width:58px;
+    height:58px;
+    right:15px;
+}
+
+.call{
+    bottom:90px;
+}
+
+.whatsapp{
+    bottom:20px;
+}
+
+}
