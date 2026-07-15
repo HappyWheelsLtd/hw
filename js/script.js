@@ -1,7 +1,3 @@
-// =========================
-// Happy Wheels
-// =========================
-
 console.log("Website Loaded");
 
 // Smooth Scroll
@@ -48,7 +44,9 @@ const menu=document.querySelector(".menu-toggle");
 
 const nav=document.querySelector(".nav-links");
 
-menu.addEventListener("click",()=>{
+menu.addEventListener("click",(e)=>{
+
+e.stopPropagation();
 
 nav.classList.toggle("active");
 
@@ -56,15 +54,20 @@ nav.classList.toggle("active");
 
 // Close menu after clicking a link
 
-document.querySelectorAll(".nav-links a").forEach(link=>{
+window.addEventListener("scroll",()=>{
 
-link.addEventListener("click",()=>{
+const navbar=document.querySelector(".navbar");
 
+navbar.style.boxShadow=
+window.scrollY>50
+?"0 10px 30px rgba(0,0,0,.25)"
+:"0 5px 20px rgba(0,0,0,.15)";
+
+// Close mobile menu while scrolling
 nav.classList.remove("active");
 
 });
 
-});
 // Close menu when clicking outside
 
 document.addEventListener("click",(e)=>{
