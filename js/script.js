@@ -65,3 +65,23 @@ nav.classList.remove("active");
 });
 
 });
+// Close menu when clicking outside
+
+document.addEventListener("click",(e)=>{
+
+if(
+!nav.contains(e.target) &&
+!menu.contains(e.target)
+){
+nav.classList.remove("active");
+}
+
+});
+
+// Close menu on scroll
+
+window.addEventListener("scroll",()=>{
+
+nav.classList.remove("active");
+
+});
