@@ -103,34 +103,26 @@ document.getElementById("loader").style.display="none";
 
 });
 
-// =========================
 // Offer Popup
-// =========================
-
-const popup=document.getElementById("offerPopup");
-
-const closePopup=document.getElementById("closeOffer");
-
-const explore=document.getElementById("offerBtn");
 
 window.addEventListener("load",()=>{
 
 setTimeout(()=>{
 
-popup.classList.add("show");
+document.getElementById("offerPopup").classList.add("show");
 
-},1800);
+},1500);
 
 });
 
-closePopup.onclick=()=>{
+document.getElementById("closeOffer").addEventListener("click",()=>{
 
-popup.classList.remove("show");
+document.getElementById("offerPopup").classList.remove("show");
 
-};
+});
 
-explore.onclick=()=>{
+document.getElementById("offerBtn").addEventListener("click",()=>{
 
-popup.classList.remove("show");
+document.getElementById("offerPopup").classList.remove("show");
 
-};
+});
