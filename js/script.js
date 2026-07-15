@@ -1,3 +1,7 @@
+// =========================
+// Happy Wheels
+// =========================
+
 console.log("Website Loaded");
 
 // Smooth Scroll
@@ -86,5 +90,15 @@ nav.classList.remove("active");
 window.addEventListener("scroll",()=>{
 
 nav.classList.remove("active");
+
+});
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.display="none";
+
+},1000);
 
 });
