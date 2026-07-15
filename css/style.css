@@ -718,11 +718,13 @@ overflow-x:hidden;
 /* NAVBAR */
 
 .navbar{
-height:auto;
-padding:15px 0;
+height:75px;
+padding:0 20px;
 display:flex;
-flex-direction:column;
-gap:15px;
+justify-content:space-between;
+align-items:center;
+flex-direction:row;
+position:relative;
 }
 
 .logo{
@@ -1023,10 +1025,9 @@ background:#08111f;
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:25px 0;
 gap:25px;
+padding:25px 0;
 transition:left .4s ease;
-z-index:9999;
 }
 
 .nav-links.active{
