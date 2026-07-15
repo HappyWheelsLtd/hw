@@ -102,3 +102,18 @@ document.getElementById("loader").style.display="none";
 },1000);
 
 });
+// Booking Type Toggle
+
+const typeButtons = document.querySelectorAll(".type-btn");
+
+typeButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        typeButtons.forEach(btn => btn.classList.remove("active"));
+
+        button.classList.add("active");
+
+    });
+
+});
